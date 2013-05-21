@@ -1,0 +1,23 @@
+
+development: &id001
+  host: localhost
+  database: gluten_development
+  sessions:
+    default:
+      database: gluten_development
+      hosts:
+        - localhost:27017
+      options:
+  options:
+
+development_cached: *id001
+default: *id001
+
+test:
+  host: localhost
+  database: gluten_test
+  sessions:
+    default:
+      database: gluten_test
+      hosts:
+        - localhost:27017
