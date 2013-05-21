@@ -8,7 +8,7 @@ gem 'rails', '~> 3.2.3'
 # gem 'nokogiri', '~> 1.5.9'
 
 gem 'activeadmin'
-# gem 'mysql2', '0.3.11'
+gem 'mysql2'
 gem 'sqlite3'
 
 group :assets do

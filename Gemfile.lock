@@ -138,6 +138,7 @@ GEM
     mocha (0.14.0)
       metaclass (~> 0.0.1)
     multi_json (1.7.3)
+    mysql2 (0.3.11)
     net-scp (1.0.4)
       net-ssh (>= 1.99.1)
     net-sftp (2.0.5)
@@ -271,6 +272,7 @@ DEPENDENCIES
   libv8 (~> 3.11.8)
   minitest
   mocha
+  mysql2
   net-ssh (= 2.4.0)
   paperclip
   quiet_assets

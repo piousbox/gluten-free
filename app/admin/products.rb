@@ -8,6 +8,18 @@ ActiveAdmin.register Product do
   # filter :has_eggs
   # filter :has_soy
 
+  index :as => :blog do
+    title do |item|
+      item.name
+    end
+    body do |item|
+      link_to item.is_glutten_free, '#'
+      content_tag :div do
+        item.is_glutten_free.to_s +' '+ item.is_gmp_separated.to_s
+      end
+    end
+  end
+
   proc do # hidden
   index do
     column :name
@@ -18,5 +30,5 @@ ActiveAdmin.register Product do
     column :has_soy
   end
   end
-
+  
 end
