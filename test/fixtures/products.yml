@@ -1,0 +1,57 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  descr: MyText
+  upc: MyString
+  found_at: MyText
+  sold_at: MyText
+  rating: 1
+  review: MyText
+  ingredients_list: MyText
+  preparation_notes: MyText
+  is_glutten_free: false
+  is_gmp_separated: false
+  is_from_dedicated_facility: false
+  is_certified_gf: false
+  is_sold_frozen: false
+  is_sold_refrigerated: false
+  is_sold_at_room_temperature: false
+  is_single_serve: false
+  is_multi_serve: false
+  is_package_plastic_tray: false
+  is_package_cardboard: false
+  is_package_paper: false
+  is_package_glass: false
+  is_package_plastic: false
+  has_soy: false
+  has_dairy: false
+  has_eggs: false
+
+two:
+  name: MyString
+  descr: MyText
+  upc: MyString
+  found_at: MyText
+  sold_at: MyText
+  rating: 1
+  review: MyText
+  ingredients_list: MyText
+  preparation_notes: MyText
+  is_glutten_free: false
+  is_gmp_separated: false
+  is_from_dedicated_facility: false
+  is_certified_gf: false
+  is_sold_frozen: false
+  is_sold_refrigerated: false
+  is_sold_at_room_temperature: false
+  is_single_serve: false
+  is_multi_serve: false
+  is_package_plastic_tray: false
+  is_package_cardboard: false
+  is_package_paper: false
+  is_package_glass: false
+  is_package_plastic: false
+  has_soy: false
+  has_dairy: false
+  has_eggs: false
