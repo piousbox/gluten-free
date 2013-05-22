@@ -15,7 +15,7 @@ ActiveAdmin.register Product do
     body do |item|
       link_to item.is_glutten_free, '#'
       content_tag :div do
-        item.is_glutten_free.to_s +' '+ item.is_gmp_separated.to_s
+        "#{item.is_glutten_free.to_s} #{item.is_gmp_separated.to_s}"
       end
     end
   end
