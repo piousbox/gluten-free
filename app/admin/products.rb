@@ -1,4 +1,3 @@
-
 ActiveAdmin.register Product do
 
   # filter :is_glutten_free
