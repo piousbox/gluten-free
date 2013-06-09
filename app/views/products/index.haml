@@ -5,5 +5,39 @@
   - @products.each do |product|
     .product
       .inner
-        %h4= product.name.titleize
-        = image_product( product )
+        .row-fluid
+          .span12
+            %h4= product.name.titleize
+        .row-fluid
+          .span2
+            = image_product( product )
+          .span9
+            .row-fluid
+              .span6.label{ :class => product.packaging }
+                .packaging
+                  = product.packaging
+              .span6.label{ :class => product.temperature }
+                .temperature
+                  = product.temperature
+                  
+            .row-fluid
+              .span6
+                .row-fluid= product.is_gf
+                .row-fluid= product.is_gmp
+                .row-fluid= product.is_dedicated
+              .span6
+                .row-fluid= product.has_dairy
+                .row-fluid= product.has_soy
+                .row-fluid= product.has_eggs
+                
+            .row-fluid
+              .span6.label
+                .n_servings= "#{ product.n_servings } servings"
+              .span6
+                .rating                
+                  - (1..product.rating).each do |i|
+                    = image_tag 'star.png'
+                
+          .span1
+            .more-field
+              = image_tag 'more.png'

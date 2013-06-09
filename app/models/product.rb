@@ -7,16 +7,16 @@ class Product # < ActiveRecord::Base
   field :name, :type => String
   field :review, :type => String
 
-  field :has_dairy, :type => Boolean
-  field :has_eggs, :type => Boolean
-  field :has_soy, :type => Boolean
+  field :has_dairy, :type => Boolean, :default => true
+  field :has_eggs, :type => Boolean, :default => true
+  field :has_soy, :type => Boolean, :default => true
 
-  field :is_gf, :type => Boolean
-  field :is_dedicated, :type => Boolean
-  field :is_gmp, :type => Boolean
+  field :is_gf, :type => Boolean, :default => false
+  field :is_dedicated, :type => Boolean, :default => false
+  field :is_gmp, :type => Boolean, :default => false
 
-  field :rating, :type => Integer
-  field :n_servings, :type => Integer
+  field :rating, :type => Integer, :default => 3
+  field :n_servings, :type => Integer, :default => 1
 
   field :packaging, :type => Symbol, :default => :paper
 
