@@ -20,15 +20,51 @@
                 .temperature
                   = product.temperature
                   
-            .row-fluid
+            .row-fluid.toggles
               .span6
-                .row-fluid= product.is_gf
-                .row-fluid= product.is_gmp
-                .row-fluid= product.is_dedicated
+                .row-fluid
+                  - if product.is_gf
+                    .btn.btn-success Y
+                  - else
+                    .btn.btn-warning N
+                  Gluten Free?
+                .row-fluid
+                  - if product.is_gmp
+                    .btn.btn-success Y
+                  - else
+                    .btn.btn-warning N
+                  GMP certified?
+                .row-fluid
+                  - if product.is_dedicated
+                    .btn.btn-success Y
+                  - else
+                    .btn.btn-warning N
+                  Dedicated facility?
               .span6
-                .row-fluid= product.has_dairy
-                .row-fluid= product.has_soy
-                .row-fluid= product.has_eggs
+                .row-fluid
+                  - if product.has_dairy
+                    .btn.btn-success Y
+                    .btn.action N
+                  - else
+                    .btn.action Y
+                    .btn.btn-warning N
+                  Has dairy?
+                .row-fluid
+                  - if product.has_soy
+                    .btn.btn-success Y
+                    .btn.action N
+                  - else
+                    .btn.action Y
+                    .btn.btn-warning N
+                  Has soy?
+                .row-fluid
+                  - if product.has_eggs
+                    .btn.btn-success Y
+                    .btn.action N
+                  - else
+                    .btn.action Y
+                    .btn.btn-warning N
+                  Has eggs?
                 
             .row-fluid
               .span6.label
