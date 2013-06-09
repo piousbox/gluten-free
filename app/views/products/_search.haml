@@ -1,0 +1,84 @@
+
+- product = Product.new
+
+.products-search
+  = form_for product, :url => search_path do |f|
+    .product
+      .inner
+        .row-fluid
+          .span12
+            = f.text_field :name
+        .row-fluid
+          .span2.thumbnail
+            = image_tag('search.png', :class => :thumb )
+          .span9
+            .row-fluid
+              .span6
+                .btn-group
+                  .btn{ 'data-toggle' => 'dropdown' }
+                    Packaging
+                    %span{ :class => :caret }                      
+                  %ul.dropdown-menu
+                    %li= link_to 'Paper', '#'
+                    %li= link_to 'Plastic', '#'
+                    
+              .span6
+                .btn-group
+                  .btn{ 'data-toggle' => 'dropdown' }
+                    Temperature
+                    %span{ :class => :caret }
+                  %ul.dropdown-menu
+                    %li= link_to 'Room temperature'
+                    %li= link_to 'Frozen'
+                    %li= link_to 'Refrigerated'
+                    
+            .row-fluid.toggles
+              .span6
+                .row-fluid
+                  - if product.is_gf
+                    .btn.btn-success Y
+                  - else
+                    .btn.btn-warning N
+                  Gluten Free?
+                .row-fluid
+                  - if product.is_gmp
+                    .btn.btn-success Y
+                  - else
+                    .btn.btn-warning N
+                  GMP certified?
+                .row-fluid
+                  - if product.is_dedicated
+                    .btn.btn-success Y
+                  - else
+                    .btn.btn-warning N
+                  Dedicated facility?
+              .span6
+                .row-fluid
+                  .btn.action Y
+                  .btn.action N
+                  .btn.action Either
+                  Has dairy?
+                  
+                .row-fluid
+                  .btn.action Y
+                  .btn.action N
+                  .btn.action Either
+                  Has soy?
+                  
+                .row-fluid
+                  .btn.action Y
+                  .btn.action N
+                  .btn.action Either
+                  Has eggs?
+                  
+            .row-fluid
+              .span6.label
+                .n_servings= "#{ product.n_servings } servings"
+              .span6
+                .rating                
+                  - (1..5).each do |i|
+                    = image_tag 'star_gray.png'
+                
+          .span1
+            .more-field
+              = image_tag 'more.png'

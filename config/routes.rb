@@ -7,4 +7,6 @@ GluttenFree::Application.routes.draw do
 
   root :to => 'products#index'
 
+  match 'search', :to => 'products#search', :as => :search
+
 end
