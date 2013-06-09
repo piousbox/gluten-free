@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130609085417) do
+ActiveRecord::Schema.define(:version => 20130609090015) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -57,7 +57,7 @@ ActiveRecord::Schema.define(:version => 20130609085417) do
     t.text     "ingredients_list"
     t.text     "preparation_notes"
     t.boolean  "is_gluten_free"
-    t.boolean  "is_gmp_separated"
+    t.boolean  "is_gmp"
     t.boolean  "is_from_dedicated_facility"
     t.boolean  "is_certified_gf"
     t.boolean  "is_sold_frozen"

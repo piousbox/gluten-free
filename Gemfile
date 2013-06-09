@@ -2,14 +2,14 @@ source 'https://rubygems.org'
 
 gem 'rails', '~> 3.2.3'
 
-# gem 'mongoid'
-# gem 'kaminari'
-# gem 'activeadmin-mongoid', :git => 'https://github.com/piousbox/activeadmin-mongoid.git', :branch => 'fix_sidebar_disable'
-# gem 'nokogiri', '~> 1.5.9'
+gem 'mongoid'
+gem 'kaminari'
 
-gem 'activeadmin'
-gem 'mysql2'
-gem 'sqlite3'
+# gem 'activeadmin-mongoid', :git => 'https://github.com/piousbox/activeadmin-mongoid.git', :branch => 'fix_sidebar_disable'
+
+# gem 'activeadmin'
+# gem 'mysql2'
+# gem 'sqlite3'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -43,6 +43,7 @@ gem "aws-s3",            :require => "aws/s3"
 # gem 'mobile-fu'
 # gem 'simple-rss'
 # gem 'htmlentities'
+# gem 'nokogiri', '~> 1.5.9' # this is an html parser
 
 group :production do
   gem 'unicorn'
