@@ -9,4 +9,6 @@ GluttenFree::Application.routes.draw do
 
   match 'search', :to => 'products#search', :as => :search
 
+  get 'about', :to => 'welcome#about', :as => :about
+
 end

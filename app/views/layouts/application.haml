@@ -8,17 +8,28 @@
   
   %body{ :id => @action_name }
     .container
-      %h1 Gluten Free
+      -# %h1 Gluten Free
 
       .navbar.header-main
         .navbar-inner
           = link_to 'Gluten Free', root_path, :class => :brand
           %ul.nav
-            %li.products-index= link_to 'Products', '#'
-            %li.products-new= link_to 'Add New', '#'
-            %li.welcome-about= link_to 'About', '#'
+            %li.products-index= link_to 'Products', products_path
+            %li.products-new
+              = link_to 'Add New', new_product_path
+            %li.products-search-link= link_to 'Search', '#'
 
+            -# %li.welcome-about= link_to 'About', '#'
+            
       = render 'products/search'
       
       = yield
 
+      %footer{ :class => :footer }
+        .row-fluid
+          .span4
+            ^__^
+          .span4
+            Copyright &copy; 2013 CAC
+          .span4
+            = link_to 'About this site', about_path

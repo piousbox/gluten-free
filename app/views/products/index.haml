@@ -10,7 +10,7 @@
             %h4= product.name.titleize
         .row-fluid
           .span2
-            = image_product( product )
+            = image_tag 'product.jpg'
           .span9
             .row-fluid
               .span6.label{ :class => product.packaging }
@@ -77,3 +77,4 @@
           .span1
             .more-field
               = image_tag 'more.png'
+              More Info

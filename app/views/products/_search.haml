@@ -35,22 +35,13 @@
             .row-fluid.toggles
               .span6
                 .row-fluid
-                  - if product.is_gf
-                    .btn.btn-success Y
-                  - else
-                    .btn.btn-warning N
+                  .btn Y
                   Gluten Free?
                 .row-fluid
-                  - if product.is_gmp
-                    .btn.btn-success Y
-                  - else
-                    .btn.btn-warning N
+                  .btn Y
                   GMP certified?
                 .row-fluid
-                  - if product.is_dedicated
-                    .btn.btn-success Y
-                  - else
-                    .btn.btn-warning N
+                  .btn Y
                   Dedicated facility?
               .span6
                 .row-fluid
@@ -73,7 +64,9 @@
                   
             .row-fluid
               .span6.label
-                .n_servings= "#{ product.n_servings } servings"
+                .n_servings
+                  = f.text_field :n_servings
+                  \# of servings
               .span6
                 .rating                
                   - (1..5).each do |i|
@@ -82,3 +75,4 @@
           .span1
             .more-field
               = image_tag 'more.png'
+              More Search Options
