@@ -3,5 +3,7 @@
 
 .products
   - @products.each do |product|
-    .item
-      = product.name
+    .product
+      .inner
+        %h4= product.name.titleize
+        = image_product( product )

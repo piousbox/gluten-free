@@ -1,0 +1,23 @@
+!!!
+%html
+  %head
+    %title Gluten Free
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  
+  %body{ :id => @action_name }
+    .container
+      %h1 Gluten Free
+
+      .navbar.header-main
+        .navbar-inner
+          = link_to 'Gluten Free', root_path, :class => :brand
+          %ul.nav
+            %li.products-index= link_to 'Products', '#'
+            %li.products-new= link_to 'Add New', '#'
+            %li.welcome-about= link_to 'About', '#'
+          
+      
+      = yield
+

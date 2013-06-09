@@ -1,8 +1,28 @@
 
-import 'bootstrap'
+@import 'bootstrap'
   
 .products
-  @extend .row
-    
-  .item
-    @extend .span6
+  @extend .row-fluid
+     
+  .product
+    @extend .span12
+    background: yellow
+      
+    .inner
+      @extend .well
+//    @extend .offset1
+
+#products_index .navbar .products-index,
+#products_new .navbar .products-new,
+#welcome_about .navbar .welcome-about,
+  @extend .active
+
+.product
+  h4
+    margin-top: 0
+      
+  img.thumb
+    width: 100px
+    height: 100px
+    display: block
+    background: #dedede

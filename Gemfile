@@ -63,6 +63,7 @@ group :test do
 end
 
 group :development, :test do
+  gem 'hpricot'
   gem 'net-ssh', '2.4.0'
   gem 'capybara'
   gem 'capistrano'
