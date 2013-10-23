@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-GluttenFree::Application.load_tasks
+GlutenFree::Application.load_tasks

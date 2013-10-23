@@ -10,7 +10,7 @@ one:
   review: MyText
   ingredients_list: MyText
   preparation_notes: MyText
-  is_glutten_free: false
+  is_gluten_free: false
   is_gmp_separated: false
   is_from_dedicated_facility: false
   is_certified_gf: false
@@ -38,7 +38,7 @@ two:
   review: MyText
   ingredients_list: MyText
   preparation_notes: MyText
-  is_glutten_free: false
+  is_gluten_free: false
   is_gmp_separated: false
   is_from_dedicated_facility: false
   is_certified_gf: false

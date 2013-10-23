@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-GluttenFree::Application.config.secret_token = '8dcf0b471ce76fd5608a4d65851b8e7ea2b99f23ec7fc409d2e60d6ec3f9c6c255f8df306c0e50ac5a649bb91dda3fd24de312c88b2f44ce2e3584242d6c15e7'
+GlutenFree::Application.config.secret_token = '8dcf0b471ce76fd5608a4d65851b8e7ea2b99f23ec7fc409d2e60d6ec3f9c6c255f8df306c0e50ac5a649bb91dda3fd24de312c88b2f44ce2e3584242d6c15e7'
